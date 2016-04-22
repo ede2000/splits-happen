@@ -118,8 +118,8 @@ public class BowlingLine
      * Overloaded function that handles the spare char '/'
      * @param input1
      * @param input2
-     * @return The appropriate decimal value given the immediately
-     * preceding char before '/'
+     * @return The appropriate decimal value given the char immediately
+     * preceding '/'
      */
     public static int charConvertor(char input1, char input2)
     {
