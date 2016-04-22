@@ -45,9 +45,6 @@ public class BowlingLine
 
         while (turn < inputString.length() && frame < 10)
         {
-
-            while (frame < 10)
-            {
                 //Array bounds checks
                 if(turn+1 < inputString.length() && turn+2
                     <= inputString.length())
@@ -71,7 +68,6 @@ public class BowlingLine
                             charConvertor(roll3);
                             frame = frame+1;
                             turn = turn+1;
-                            break;
                     }
 
                     //Account for a spare
@@ -83,7 +79,6 @@ public class BowlingLine
                             charConvertor(roll3);
                         frame = frame + 1;
                         turn = turn + 2;
-                        break;
                     }
 
                     //Account for neither a strike or a spare
@@ -96,11 +91,9 @@ public class BowlingLine
                             charConvertor(roll2));
                         frame = frame + 1;
                         turn = turn + 2;
-                        break;
                     }
                 }
             }
-        }
     }
 
     /**
